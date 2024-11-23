@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Fontawesome with cdn-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Page icon-->
+        <link rel="icon" href="assets/logo_02.png">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lobster&display=swap"
+            rel="stylesheet">
+        <!-- Page title -->
+        <title>Kidify - Kid Fashion Store HTML</title>
+        <!-- My style -->
+        <link rel="stylesheet" href="stylesheet/style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-paypal"></i></a>
+                <span> | </span>
+                <a href="#" class="phone-number">(+01) - 2345 - 6789</a>
+            </div>
+            <p>FREE SHIPPING & SHOPPER ON ORDERS ABOVE €75 - IN STORE PICKUPS &
+                RETURNS</p>
+            <div class="select">
+                <select>
+                    <option value>EN</option>
+                    <option value>JP</option>
+                    <option value>KR</option>
+                </select>
+                <select>
+                    <option value>USD</option>
+                    <option value>EURO</option>
+                    <option value>AUD</option>
+                </select>
+            </div>
+        </nav>
+        <!-- header -->
+        <header>
+            <input type="checkbox" id="header-links">
+            <label for="header-links" class="first-label-header">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark close-header-links"></i>
+            </label>
+
+            <ul class="ul-header">
+                <li>
+                    <a href="#">HOME</a>
+                    <ul>
+                        <li class="head-list">Homepage</li>
+                        <li><a href="#">Homepage 1</a></li>
+                        <li><a href="#">Homepage 2</a></li>
+                        <li><a href="#">Homepage 3</a></li>
+                        <li><a href="#">Homepage 4</a></li>
+                        <li><a href="#">Homepage 5</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">SHOP</a>
+                    <ul>
+                        <li class="head-list">Shop layouts</li>
+                        <li><a href="#">Product Listing 1</a></li>
+                        <li><a href="#">Product Listing 2</a></li>
+                        <li><a href="#">Product Listing 3</a></li>
+                        <li><a href="#">Product Single 1</a></li>
+                        <li><a href="#">Product Single 2</a></li>
+                        <li><a href="#">Product Single 3</a></li>
+                        <li><a href="#">Shop Cart</a></li>
+                        <li><a href="#">Check Out</a></li>
+                        <li><a href="#">Product Compare</a></li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#">PAGES</a>
+                    <ul>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">MY ACCOUNT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">CART</a></li>
+                        <li><a href="#">PRODUCTS COMPARE</a></li>
+                        <li><a href="#">CHECK OUT</a></li>
+                        <li><a href="#">ERROR 404</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PLOG</a>
+                    <ul>
+                        <li><a href="#">BLOG LIST</a></li>
+                        <li><a href="#">BLOG LIST 2</a></li>
+                        <li><a href="#">BLOG LIST 3</a></li>
+                        <li><a href="#">BLOG SINGLE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CONTENT</a>
+                </li>
+            </ul>
+            <div class="img-logo">
+                <a href="#"><img src="assets/logo.svg" alt="rabbit"></a>
+            </div>
+            <div class="right-icons">
+                <input type="checkbox" id="label-search">
+                <label for="label-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </label>
+                <label for="label-search" id="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div id="search">
+                    <div class="search-products">
+                        <h3>Search products</h3>
+                    </div>
+                    <button>Enter keyword <span><i
+                                class="fa-solid fa-magnifying-glass"></i></span></button>
+                    <h6>Quick search: <a href="#">T-shirt</a> <a
+                            href="#">Jeans</a> <a href="#">Mens</a></h6>
+                    <h3>Category</h3>
+                    <select>
+                        <option>All categories</option>
+                        <option>Animals & Pet Supplies</option>
+                        <option>Baby & Toddler</option>
+                        <option>Boys Clothing</option>
+                        <option>Baby Care</option>
+                        <option>Safty Equipment</option>
+                        <option>Activity & Gear</option>
+                        <option>Baby Shoes</option>
+                        <option>Family Outfits</option>
+                        <option>Womens</option>
+                    </select>
+                    <h3>Price</h3>
+                    <input type="range" id="range" start="0" min="0" max="300"
+                        step="1">
+                    <br>
+                    <label for="range">Price Range: $0 - $300</label>
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" id="one">
+                            <label for="one">$100 - $200 </label>
+                        </div>
+                        <span>12</span>
+                    </div>
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" id="tow">
+                            <label for="tow">$200 - $400 </label>
+                        </div>
+                        <span>24</span>
+                    </div>
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" id="three">
+                            <label for="three">$400 - $600 </label>
+                        </div>
+                        <span>54</span>
+                    </div>
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" id="four">
+                            <label for="four">$600 - $800 </label>
+                        </div>
+                        <span>78</span>
+                    </div>
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" id="five">
+                            <label for="five">Over $1000 </label>
+                        </div>
+                        <span>125</span>
+                    </div>
+                </div>
+                <input type="checkbox" id="label-user">
+                <label for="label-user">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-xmark close-user"></i>
+                </label>
+                <div class="user">
+                    <div></div>
+                    <h3>Login</h3>
+                    <h4>Sign up</h4>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <h5>Forget your password?</h5>
+                    <button>Login</button>
+                    <p><a href>Privacy & Trems</a></p>
+                </div>
+
+                <label for><i class="fa-regular fa-heart"></i></label>
+
+                <label for><i class="fa-solid fa-briefcase"></i></label>
+
+            </div>
+        </header>
+        <!-- slider -->
+        <div class="slider">
+            <div>
+                <h6>Sale Off</h6>
+                <h1>Winter Wool Collection</h1>
+                <p>Sit amet consectetur, adipisicing elit. Magni in blanditiis,
+                    illo nihil optio excepturi. Cupiditate, aspernatur amet
+                    nostrum veniam deleniti excepturi ducimus quo aliquid
+                    molestiae voluptatum mollitia dolore expedita.</p>
+                <button class="btn-shop">SHOP NOW</button>
+                <button class="btn-arrivales">NEW ARRIVALES</button>
+            </div>
+
+        </div>
+        <section>
+            <!-- circles section -->
+            <div class="sec1-circles">
+                <div>
+                    <img src="assets/cat.png">
+                    <h4>Kids Toys</h4>
+                </div>
+                <div>
+                    <img src="assets/cat2.png">
+                    <h4>Teddy Bear</h4>
+                </div>
+                <div>
+                    <img src="assets/cat3.png">
+                    <h4>Boys</h4>
+                </div>
+                <div>
+                    <img src="assets/cat4.png">
+                    <h4>Shoes</h4>
+                </div>
+                <div>
+                    <img src="assets/cat5.png">
+                    <h4>Cribs</h4>
+                </div>
+                <div>
+                    <img src="assets/cat6.png">
+                    <h4>Wood Toys</h4>
+                </div>
+                <div>
+                    <img src="assets/cat7.png">
+                    <h4>Moms</h4>
+                </div>
+                <div>
+                    <img src="assets/cat8.png">
+                    <h4>Baby</h4>
+                </div>
+                <div>
+                    <img src="assets/cat9.png">
+                    <h4>Cute</h4>
+                </div>
+            </div>
+            <!-- new arrivales section -->
+            <div class="sec2-new-arrivals">
+                <p>NEW ARRIVALS</p>
+                <div class="text">
+                    <h3 class="first">Girls' Clothing</h3>
+                    <h3>Boys' Clothing</h3>
+                    <h3>Accessories</h3>
+                </div>
+                <div class="boxes">
+                    <div class="boxes1">
+                        <div class="bg-toy1">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <h3>Junior Jersey Dress</h3>
+                        <h4>$16.00</h4>
+                        <h5>$19.00</h5>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                        <p>As the fashion industry continues to evolve,
+                            children</p>
+                    </div>
+                    <div class="boxes2">
+                        <div class="bg-toy2">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <h3>Junior Jersey Dress</h3>
+                        <h4>$16.00</h4>
+                        <h5>$19.00</h5>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                        <p>As the fashion industry continues to evolve,
+                            children</p>
+                    </div>
+                    <div class="boxes3">
+                        <div class="bg-toy3">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <h3>Junior Jersey Dress</h3>
+                        <h4>$16.00</h4>
+                        <h5>$19.00</h5>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                        <p>As the fashion industry continues to evolve,
+                            children</p>
+                    </div>
+                    <div class="boxes4">
+                        <div class="bg-toy4">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <h3>Junior Jersey Dress</h3>
+                        <h4>$16.00</h4>
+                        <h5>$19.00</h5>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                        <p>As the fashion industry continues to evolve,
+                            children</p>
+                    </div>
+                    <div class="boxes5">
+                        <div class="bg-toy5">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <h3>Junior Jersey Dress</h3>
+                        <h4>$16.00</h4>
+                        <h5>$19.00</h5>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                        <p>As the fashion industry continues to evolve,
+                            children</p>
+                    </div>
+                </div>
+            </div>
+            <!-- deal of the day section -->
+            <div class="sec3-deal-of-the-day">
+                <p>DEAL OF THE DAY</p>
+                <div class="four-boxes">
+                    <div class="four-boxes1">
+                        <div class="bg1">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h3><a href="#">Baby Bear Ears Beanie</a></h3>
+                            <h4>$34.00</h4>
+                            <h5>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </h5>
+                            <p>As the fashion industry continues to evolve,
+                                children's fashion is no exception</p>
+                            <div class="conuter-down">
+                                <div class="days">
+                                    <h1>10</h1>
+                                    <h2>Days</h2>
+                                </div>
+                                <div class="hours">
+                                    <h1>08</h1>
+                                    <h2>Hours</h2>
+                                </div>
+                                <div class="min">
+                                    <h1>20</h1>
+                                    <h2>Min</h2>
+                                </div>
+                                <div class="sec">
+                                    <h1>44</h1>
+                                    <h2>Sec</h2>
+                                </div>
+                            </div>
+                            <button>ADD TO CARD</button>
+                        </div>
+                    </div>
+                    <div class="four-boxes2">
+                        <div class="bg2">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h3><a href="#">Baby Bear Ears Beanie</a></h3>
+                            <h4>$48.00</h4>
+                            <h5>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </h5>
+                            <p>As the fashion industry continues to evolve,
+                                children's fashion is no exception</p>
+                            <div class="conuter-down">
+                                <div class="days">
+                                    <h1>10</h1>
+                                    <h2>Days</h2>
+                                </div>
+                                <div class="hours">
+                                    <h1>08</h1>
+                                    <h2>Hours</h2>
+                                </div>
+                                <div class="min">
+                                    <h1>20</h1>
+                                    <h2>Min</h2>
+                                </div>
+                                <div class="sec">
+                                    <h1>44</h1>
+                                    <h2>Sec</h2>
+                                </div>
+                            </div>
+                            <button>ADD TO CARD</button>
+                        </div>
+                    </div>
+                    <div class="four-boxes3">
+                        <div class="bg3">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h3><a href="#">Baby Bear Ears Beanie</a></h3>
+                            <h4>$34.00</h4>
+                            <h5>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </h5>
+                            <p>As the fashion industry continues to evolve,
+                                children's fashion is no exception</p>
+                            <div class="conuter-down">
+                                <div class="days">
+                                    <h1>10</h1>
+                                    <h2>Days</h2>
+                                </div>
+                                <div class="hours">
+                                    <h1>08</h1>
+                                    <h2>Hours</h2>
+                                </div>
+                                <div class="min">
+                                    <h1>20</h1>
+                                    <h2>Min</h2>
+                                </div>
+                                <div class="sec">
+                                    <h1>44</h1>
+                                    <h2>Sec</h2>
+                                </div>
+                            </div>
+                            <button>ADD TO CARD</button>
+                        </div>
+                    </div>
+                    <div class="four-boxes4">
+                        <div class="bg4">
+                            <button>Hot</button>
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h3><a href="#">Baby Bear Ears Beanie</a></h3>
+                            <h4>$48.00</h4>
+                            <h5>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </h5>
+                            <p>As the fashion industry continues to evolve,
+                                children's fashion is no exception</p>
+                            <div class="conuter-down">
+                                <div class="days">
+                                    <h1>10</h1>
+                                    <h2>Days</h2>
+                                </div>
+                                <div class="hours">
+                                    <h1>08</h1>
+                                    <h2>Hours</h2>
+                                </div>
+                                <div class="min">
+                                    <h1>20</h1>
+                                    <h2>Min</h2>
+                                </div>
+                                <div class="sec">
+                                    <h1>44</h1>
+                                    <h2>Sec</h2>
+                                </div>
+                            </div>
+                            <button>ADD TO CARD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bike photo section -->
+            <div class="sec4-photo">
+                <a href="#"><img src="assets/section4.png" alt></a>
+            </div>
+            <!-- kid interior accressories section -->
+            <div class="sec5-kid-interior-accressories">
+                <div class="head-sec5">
+                    <h1>KID INTERIOR ACCESSORIES</h1>
+                    <a href="#"><h5>View All <i
+                                class="fa-solid fa-arrow-right"></i></h5></a>
+                </div>
+                <div class="boxes-kid">
+                    <div class="boxes-kid1">
+                        <div class="bg-boxes-kid1">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Lumberjack Flannel</a></h3>
+                        <h4>$16.00</h4>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                    </div>
+                    <div class="boxes-kid2">
+                        <div class="bg-boxes-kid2">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Stars Dress</a></h3>
+                        <h4>$16.00</h4>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                    </div>
+                    <div class="boxes-kid3">
+                        <div class="bg-boxes-kid3">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Ladybug Overalls</a></h3>
+                        <h4>$16.00</h4>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                    </div>
+                    <div class="boxes-kid4">
+                        <div class="bg-boxes-kid4">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Junior Jean Skirt</a></h3>
+                        <h4>$16.00</h4>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                    </div>
+                    <div class="boxes-kid5">
+                        <div class="bg-boxes-kid5">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Lumberjack Flannel</a></h3>
+                        <h4>$16.00</h4>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                    </div>
+                    <div class="boxes-kid6">
+                        <div class="bg-boxes-kid6">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Stars Dress</a></h3>
+                        <h4>$16.00</h4>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                    </div>
+                    <div class="boxes-kid7">
+                        <div class="bg-boxes-kid7">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Ladybug Overalls</a></h3>
+                        <h4>$16.00</h4>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                    </div>
+                    <div class="boxes-kid8">
+                        <div class="bg-boxes-kid8">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Junior Jean Skirt</a></h3>
+                        <h4>$16.00</h4>
+                        <h6>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <!-- best selling and flash sale section -->
+            <div class="sec6-three-sections">
+                <div class="section-one">
+                    <div class="head-section-one">
+                        <h1>BEST SELLING</h1>
+                        <div><button><i
+                                    class="fa-solid fa-angle-left"></i></button>
+                            <button><i
+                                    class="fa-solid fa-angle-right"></i></button></div>
+                    </div>
+                    <div class="body-section-one">
+                        <div>
+                            <div class="bg-b-s-1"><img
+                                    src="assets/product24.png" alt></div>
+                            <div class="text-b-s-1">
+                                <h3><a href="#">Toddler Tutu Dress</a></h3>
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </h6>
+                                <h4>$185.00</h4>
+                                <h5>$196.00</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-b-s-2"><img src="assets/toy5.png"
+                                    alt></div>
+                            <div class="text-b-s-2">
+                                <h3><a href="#">Baby Bear Hoodie</a></h3>
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </h6>
+                                <h4>$185.00</h4>
+                                <h5>$196.00</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-b-s-3"><img
+                                    src="assets/product26.png" alt></div>
+                            <div class="text-b-s-3">
+                                <h3><a href="#">Petite Pinafore Dress</a></h3>
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </h6>
+                                <h4>$185.00</h4>
+                                <h5>$196.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-two">
+                    <div class="head-section-two">
+                        <h1>FLASH SALE</h1>
+                        <div><button><i
+                                    class="fa-solid fa-angle-left"></i></button>
+                            <button><i
+                                    class="fa-solid fa-angle-right"></i></button></div>
+                    </div>
+                    <div class="body-section-two">
+                        <div>
+                            <div class="bg-b-s-1"><img src="assets/toy.png"
+                                    alt></div>
+                            <div class="text-b-s-1">
+                                <h3><a href="#">Tiny Tuxedo Shirt</a></h3>
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </h6>
+                                <h4>$185.00</h4>
+                                <h5>$196.00</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-b-s-2"><img
+                                    src="assets/product28.png" alt></div>
+                            <div class="text-b-s-2">
+                                <h3><a href="#">Little Lumberjack
+                                        Flannel</a></h3>
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </h6>
+                                <h4>$185.00</h4>
+                                <h5>$196.00</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-b-s-3"><img src="assets/toy3.png    "
+                                    alt></div>
+                            <div class="text-b-s-3">
+                                <h3><a href="#">Petite Plaid Skirt</a></h3>
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </h6>
+                                <h4>$185.00</h4>
+                                <h5>$196.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-three">
+                    <div class="pink">
+                        <div>
+                            <h2>Kids Dress</h2>
+                            <p>Get an extra 30% discount</p>
+                            <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                    <div class="baby-blue">
+                        <div>
+                            <h2>Girls Apparels</h2>
+                            <p>Get an extra 50% discount</p>
+                            <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- back ground geometric shapes secion -->
+            <div class="sec6-input">
+                <div class="text">
+                    <h1>Sing up and get up to <span>25%</span> off your first
+                        purchase</h1>
+                    <p>Receive offter, product alerts, styling inspiration and
+                        more. By signing up, you agree to our Privace Policy</p>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Enter your email">
+                    <button>SUBSSCRIBER</button>
+                </div>
+            </div>
+            <!-- trending products section -->
+            <div class="sec7-trending-products">
+                <div class="head-sec7">
+                    <div class="text">
+                        <h1>TRENDING PRODUCTS</h1>
+                        <a href="#"><h5>View All <i
+                                    class="fa-solid fa-arrow-right"></i></h5></a>
+                    </div>
+                    <div class="btns"><button><i
+                                class="fa-solid fa-angle-left"></i></button>
+                        <button><i
+                                class="fa-solid fa-angle-right"></i></button></div>
+                </div>
+                <div class="boxes-trending">
+                    <div class="boxes-trending1">
+                        <div class="bg-boxes-trending1">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Ladybug Overalls</a></h3>
+                        <h4>$16.00</h4>
+
+                    </div>
+                    <div class="boxes-trending2">
+                        <div class="bg-boxes-trending2">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Ladybug Overalls</a></h3>
+                        <h4>$16.00</h4>
+
+                    </div>
+                    <div class="boxes-trending3">
+                        <div class="bg-boxes-trending3">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Toddler Turtleneck Sweater</a></h3>
+                        <h4>$16.00</h4>
+
+                    </div>
+                    <div class="boxes-trending4">
+                        <div class="bg-boxes-trending4">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Junior Jogger Pants</a></h3>
+                        <h4>$16.00</h4>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- flash sale section -->
+            <div class="sec8-flash-sale">
+                <div class="head-sec8">
+                    <div class="text">
+                        <h1>FLASH SALE</h1>
+                        <a href="#"><h5>View All <i
+                                    class="fa-solid fa-arrow-right"></i></h5></a>
+                    </div>
+                    <div class="btns"><button><i
+                                class="fa-solid fa-angle-left"></i></button>
+                        <button><i
+                                class="fa-solid fa-angle-right"></i></button></div>
+                </div>
+                <div class="boxes-flash-sale">
+                    <div class="boxes-flash-sale1">
+                        <div class="bg-boxes-flash-sale1">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Ladybug Overalls</a></h3>
+                        <h4>$16.00</h4>
+
+                    </div>
+                    <div class="boxes-flash-sale2">
+                        <div class="bg-boxes-flash-sale2">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Little Ladybug Overalls</a></h3>
+                        <h4>$16.00</h4>
+
+                    </div>
+                    <div class="boxes-flash-sale3">
+                        <div class="bg-boxes-flash-sale3">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Toddler Turtleneck Sweater</a></h3>
+                        <h4>$16.00</h4>
+
+                    </div>
+                    <div class="boxes-flash-sale4">
+                        <div class="bg-boxes-flash-sale4">
+                            <div class="up">
+                                <button>Hot</button>
+                                <div>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <button>ADD TO CARD</button>
+                            </div>
+                        </div>
+                        <h3><a href="#">Junior Jogger Pants</a></h3>
+                        <h4>$16.00</h4>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- lastest news section -->
+            <div class="sec9-latest-news">
+                <h1>LATEST NEWS AND EVENTS</h1>
+                <p>Don't miss out on great promotional news or upcoming events
+                    in our store system</p>
+                <div class="three-boxes">
+                    <div class="box1">
+                        <div class="bg-box1">
+                            <img src="assets/blog1.png">
+                            <div>
+                                <h5>21</h5>
+                                <h6>Jun</h6>
+                            </div>
+                        </div>
+                        <h3>Eco-Friendly Children's Clothing: 5 Sustainable
+                            Brands</h3>
+                        <p>Prioritize sustainability with 5 eco-friendly brands
+                            that offer organic cotton and recycled materials for
+                            children's clothing</p>
+                        <h4>Keep Reading <i
+                                class="fa-solid fa-arrow-right-long"></i></h4>
+                    </div>
+                    <div class="box2">
+                        <div class="bg-box2">
+                            <img src="assets/blog2.png">
+                            <div>
+                                <h5>21</h5>
+                                <h6>Jun</h6>
+                            </div>
+                        </div>
+                        <h3>Styling Children for Formal Events: Tips for
+                            Dressing to Impress</h3>
+                        <p>Get tips on how to dress your child for formal
+                            events, including choosing the right attire and
+                            accessories for both style and comfort</p>
+                        <h4>Keep Reading <i
+                                class="fa-solid fa-arrow-right-long"></i></h4>
+                    </div>
+                    <div class="box3">
+                        <div class="bg-box3">
+                            <img src="assets/blog3.png">
+                            <div>
+                                <h5>21</h5>
+                                <h6>Jun</h6>
+                            </div>
+                        </div>
+                        <h3>Discover the Latest Trends for Kids Fashion in 2023:
+                            Top 10 Trendy Styles</h3>
+                        <p>As the fashion industry continues to evolve,
+                            children's fashion is no exception. This article
+                            explores the latest trends for kids fashion in
+                            2023</p>
+                        <h4>Keep Reading <i
+                                class="fa-solid fa-arrow-right-long"></i></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- section above footer -->
+            <div class="sec10-up-footer">
+                <div class="row">
+                    <div class="box1">
+                        <img src="assets/30day.svg">
+                        <div>
+                            <h4>30 DAY RETURNS</h4>
+                            <p>No-nonsense return policy if you are not
+                                happy</p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="assets/fastshipping.svg">
+                        <div>
+                            <h4>FAST SHIPING</h4>
+                            <p>Your precious package is expedited and
+                                insured</p>
+                        </div>
+                    </div>
+                    <div class="box3">
+                        <img src="assets/certify.svg">
+                        <div>
+                            <h4>GLOBAL CERTIFIED</h4>
+                            <p>5 star reviews from reputable units around the
+                                world</p>
+                        </div>
+                    </div>
+                    <div class="box4">
+                        <img src="assets/payment.svg">
+                        <div>
+                            <h4>SECURE PAYMENT</h4>
+                            <p>Pay with the smartest and most secure apps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="footer1">
+
+                <ul class="ul2">
+                    <li class="list-head">COMPANY</li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>About us</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Our Experts</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Services & Price</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Latest News</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Support Center</span></a></li>
+                </ul>
+                <ul class="ul3">
+                    <li class="list-head">CUSTOMERS</li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Contact us</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Payment & Tax</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Bonus Point</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Supply Chain</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Student Discount</span></a></li>
+                </ul>
+                <ul class="ul4">
+                    <li class="list-head">SUPPORT</li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Shipping Info</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Returns</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>Refund</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>How To Order</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i>
+                            <span>How To Track</span></a></li>
+                </ul>
+                <ul class="ul1">
+                    <li class="list-head">CONTACT</li>
+                    <li>Monday to Friday 8 a.m - 5 p.m</li>
+                    <li><i class="fa-solid fa-phone"></i> +01 456 789</li>
+                    <li><i class="fa-regular fa-envelope"></i>
+                        contact@kidify.com</li>
+                    <li class="follow-us">FOLLOW US</li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-paypal"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <ul class="ul5">
+                    <li class="list-head">GET APP</li>
+                    <li><a href="#"><img src="assets/logo.svg"></a></li>
+                    <li><p>Download our Apps and get extra 15% Discount on your
+                            first Order…!</p></li>
+                    <li><a href="#"><img src="assets/app-store.svg"></a> <a
+                            href="index.html"><img
+                                src="assets/app-google.svg"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
